@@ -5,27 +5,38 @@
             <h1>Case one</h1>
             <form class="form"> 
                 <label>Pseudonyme <img width="25" (mouseenter)="callTooltip('hover', 'Un pseudonyme ne peut pas dépasser 10 caractères, et ne peux pas contenir les symboles spéciaux tel que @, !, etc.')" (mouseleave)="removeTooltip()" src="../../../assets/img/doubts-button.png"></label>
-                <app-tooltip [message]="message" [action]="action"></app-tooltip>
                 <input>
+                <app-tooltip @animation *ngIf="action==='hover'" [message]="message" [action]="action"></app-tooltip>   
             </form>
         
         </div>
         <div class="w-50">
-            <button (click)="callTooltip('click','Ce bouton peut vous servir à beaucoup de choses.')">
+            <h1>Case two</h1>
+            <button id="click" (click)="callTooltip('click','Ce bouton peut vous servir à beaucoup de choses.')">
             Click me !
             </button>
+            <app-tooltip @animation *ngIf="action==='click'" [message]="message" [action]="action"></app-tooltip>   
+
         </div>
     </div>
     <div class="line">
         <div class="w-50">
-            
+            <h1>Case three</h1>
+            <form class="form"> 
+                <label>Tap inside the input !</label>
+                <input (focus)="callTooltip('focus', 'Le mot de passe doit être de 8 caractères')" >
+                <app-tooltip @animation *ngIf="action==='focus'" [message]="message" [action]="action"></app-tooltip>   
+
+            </form>
         </div>
         <div class="w-50">
-            <img width="500" src="../../../assets/img/case4.jpg">
+            <h1>Case four</h1>
+            <div id="hoverImageContainer">
+                <img width="500" src="../../../assets/img/case4.jpg"  (mouseenter)="callTooltip('hoverImage', 'Une belle rose')" (mouseleave)="removeTooltip()">
+                <app-tooltip id="hoverImage" @animation *ngIf="action==='hoverImage'" [message]="message" [action]="action"></app-tooltip>   
+            </div>
         </div>
     </div>
 
 </section>
-
-
 

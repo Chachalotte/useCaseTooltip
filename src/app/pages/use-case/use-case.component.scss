@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&family=M+PLUS+2:wght@300&family=Outfit:wght@700&display=swap');
+
+h1 {
+    font-family: 'Akshar', sans-serif;
+}
+
 .home {
     display: flex;
     flex-direction: row;
@@ -20,4 +26,19 @@
     input {
         width: 25%;
     }
+}
+
+#hoverImage {
+  /* new styles below: */
+  position: absolute;
+  color: white;
+  background-color:red;
+  top: 50%;
+  left: 35%;
+}
+
+#hoverImageContainer {
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%, 0);
 }
