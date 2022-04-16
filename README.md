@@ -7,7 +7,7 @@ Le projet a été initialisé sous la version 13 d'Angular, qui utilise le langa
 
 J'ai choisi ce framework, car celui-ci est similaire à React grâce à sa structure et le système de composants. 
 
-J'ai décidé de réaliser 4 useCase différents : 
+J'ai décidé de réaliser 4 useCase différents pour répondre au besoin du tooltip et améliorer l'interface utilisateur : 
 
 - Hover d'une image
 - Appui sur un bouton
