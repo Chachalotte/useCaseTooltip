@@ -4,21 +4,24 @@
         <div class="w-50">
             <h1>Case one</h1>
             <form class="form"> 
-                <label>Case one <img width="25" src="../../../assets/img/doubts-button.png"></label>
+                <label>Pseudonyme <img width="25" (mouseenter)="callTooltip('hover', 'Un pseudonyme ne peut pas dépasser 10 caractères, et ne peux pas contenir les symboles spéciaux tel que @, !, etc.')" (mouseleave)="removeTooltip()" src="../../../assets/img/doubts-button.png"></label>
+                <app-tooltip [message]="message" [action]="action"></app-tooltip>
                 <input>
             </form>
         
         </div>
         <div class="w-50">
-            Case two
+            <button (click)="callTooltip('click','Ce bouton peut vous servir à beaucoup de choses.')">
+            Click me !
+            </button>
         </div>
     </div>
     <div class="line">
         <div class="w-50">
-            Case three
+            
         </div>
         <div class="w-50">
-            Case four
+            <img width="500" src="../../../assets/img/case4.jpg">
         </div>
     </div>
 
@@ -26,4 +29,3 @@
 
 
 
-<app-tooltip></app-tooltip>dzadza

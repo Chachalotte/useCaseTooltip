@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UseCaseComponent implements OnInit {
 
+  public action: string = '';
+  public message: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  callTooltip(action: string, message: string) {
+
+    this.action = action;
+    this.message = message;
+    console.log('OK');
+  }
+
+  removeTooltip(){
+    this.action = '';
   }
 
 }

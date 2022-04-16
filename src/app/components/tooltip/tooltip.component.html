@@ -1,3 +1,7 @@
-<section *ngIf="tooltipHover">
+<section *ngIf="action === 'hover'">
+    {{ message }}
+</section>
+
+<section class="greyBg" *ngIf="action === 'click'">
     {{ message }}
 </section>
