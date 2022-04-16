@@ -19,7 +19,7 @@ En ce qui concerne ma démarche pour faire les fonctionnalités, je me suis pos�
 - Comment adapter le message du tooltip selon le scénario ?
 - Pour les fonctionnalités, j'ai utilisé le module d'animation d'Angular à l'appel d'un composant enfant pour animer les tooltips
 
-# Comment utiliser le projet ?
+# Comment lancer le projet ?
 
 - Cloner le repo
 - Taper « npm i » pour installer les dépendances du projet
