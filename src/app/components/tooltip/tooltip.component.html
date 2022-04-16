@@ -1,7 +1,15 @@
-<section *ngIf="action === 'hover'">
+<section class="greyBg" *ngIf="action === 'hover'">
     {{ message }}
 </section>
 
-<section class="greyBg" *ngIf="action === 'click'">
+<section id="click" *ngIf="action === 'click'">
+    {{ message }}
+</section>
+
+<section id="hoverImage" *ngIf="action === 'hoverImage'">
+    {{ message }}
+</section>
+
+<section id="focus" *ngIf="action === 'focus'">
     {{ message }}
 </section>

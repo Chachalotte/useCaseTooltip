@@ -1,6 +1,24 @@
 # useCaseTooltip
 Usecase tooltip pour Unkle
 
+# Démarches du projet 
+
+Le projet a été initialisé sous la version 13 d'Angular, qui utilise le langage TypeScript.
+
+J'ai choisi ce framework, car celui-ci est similaire à React grâce à sa structure et le système de composants. 
+
+J'ai décidé de réaliser 4 useCase différents : 
+
+- Hover d'une image
+- Appui sur un bouton
+- Hover d'une icone
+- Focus sur un input
+
+En ce qui concerne ma démarche pour faire les fonctionnalités, je me suis posé et me suis demander :
+
+- Comment adapter le message du tooltip selon le scénario ?
+- Pour les fonctionnalités, j'ai utilisé le module d'animation d'Angular à l'appel d'un composant enfant pour animer les tooltips
+
 # Comment utiliser le projet ?
 
 - Cloner le repo
