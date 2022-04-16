@@ -16,8 +16,9 @@ J'ai décidé de réaliser 4 useCase différents :
 
 En ce qui concerne ma démarche pour faire les fonctionnalités, je me suis posé et me suis demander :
 
-- Comment adapter le message du tooltip selon le scénario ?
-- Pour les fonctionnalités, j'ai utilisé le module d'animation d'Angular à l'appel d'un composant enfant pour animer les tooltips
+- Comment adapter le message du tooltip selon le scénario ? Je me suis penché sur la question en le modifiant à chaque appel
+- Pour les 4 useCases, j'envoie au composant enfant l'action utilisé pour l'adapter selon le scénario si besoin pour une idée d'amélioration de la fonctionnalité
+- Pour les animations, j'ai utilisé le module d'animation d'Angular à l'appel d'un composant enfant pour animer les tooltips
 
 # Comment lancer le projet ?
 
