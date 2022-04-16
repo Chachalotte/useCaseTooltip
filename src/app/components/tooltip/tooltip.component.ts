@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TooltipComponent implements OnInit {
 
+  public tooltipHover: boolean = false;
+  public message: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {
